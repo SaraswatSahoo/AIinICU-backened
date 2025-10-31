@@ -14,7 +14,6 @@ const wss = new ws_1.WebSocketServer({ server });
 const PORT = process.env.PORT || 3000;
 // Map data keyed by patient ID for efficient access
 const patientsVitals = {};
-console.log(data_1.high_risk_data);
 data_1.high_risk_data.forEach((vitals) => {
     patientsVitals[vitals['patient ID']] = {
         heartRate: vitals['Heart Rate'],
